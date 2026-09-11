@@ -964,7 +964,7 @@ async function init(): Promise<void> {
     // AI badge toggle
     aiBadge.addEventListener("click", () => {
       if (!hasApiKey()) {
-        log({ level: "warn", message: "Set your DeepSeek API key first (🔑 API Settings).", timestamp: Date.now() });
+        log({ level: "warn", message: "Set your Ollama API key first (🔑 API Settings). Use any non-empty value (e.g. 'ollama').", timestamp: Date.now() });
         apiKeyBody.style.display = "block";
         return;
       }

@@ -1,6 +1,6 @@
 /**
  * aiService.ts — AI-powered command processing
- * Multi-turn conversation with DeepSeek + web search via DuckDuckGo.
+ * Multi-turn conversation with local Ollama (ornith-1.5:9b) + web search.
  */
 
 import {
@@ -27,8 +27,8 @@ const STORAGE_KEY = "ppt_ai_api_key";
 let apiKey = "";
 try { const s = localStorage.getItem(STORAGE_KEY); if (s) apiKey = s; } catch { /* */ }
 
-const API_BASE = "https://api.deepseek.com/v1";
-const MODEL = "deepseek-chat";
+const API_BASE = "http://localhost:11434/v1";
+const MODEL = "ornith-1.5:9b";
 
 // ── Conversation History (persists across commands) ───────────────
 

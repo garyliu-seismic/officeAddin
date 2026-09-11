@@ -13,7 +13,7 @@
 | 项目 | 值 |
 |------|-----|
 | 框架 | Office JS PowerPoint API + TypeScript + Webpack 5 |
-| AI | DeepSeek Chat API (OpenAI-compatible, Function Calling) |
+| AI | Ollama `ornith-1.5:9b` (local, OpenAI-compatible, Function Calling) |
 | 开发服务器 | webpack-dev-server @ `localhost:3000` (HTTPS) |
 | Node.js | v24.18.0 |
 | Git Branch | `personal/gary/AddTaskPane` |
